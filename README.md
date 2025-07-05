@@ -12,6 +12,9 @@ An AI-powered YouTube video summarizer that extracts transcripts from YouTube vi
 - **Streamlit Interface**: Beautiful web interface for interaction
 - **Multi-language Support**: Handles videos in different languages with fallback
 
+![image](https://github.com/user-attachments/assets/dae79571-d244-4ed3-b246-8fb4887e34c4)
+
+
 ## 🚀 Quick Start
 
 ### Prerequisites
