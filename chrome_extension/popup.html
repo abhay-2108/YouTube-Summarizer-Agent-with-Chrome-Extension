@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TubeQuery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      font-family: 'Roboto', Arial, sans-serif;
+      width: 360px;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      overflow: hidden;
+    }
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12), 0 1.5px 4px rgba(44, 62, 80, 0.08);
+      padding: 28px 24px 20px 24px;
+      width: 320px;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+    .header-icon {
+      font-size: 1.7em;
+      margin-right: 8px;
+    }
+    h3 {
+      font-size: 1.25em;
+      font-weight: 700;
+      margin: 0;
+      color: #e53935;
+      letter-spacing: 0.5px;
+    }
+    input {
+      border: 1.5px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 1em;
+      margin-bottom: 12px;
+      outline: none;
+      transition: border 0.2s;
+    }
+    input:focus {
+      border: 1.5px solid #e53935;
+    }
+    button {
+      background: linear-gradient(90deg, #e53935 0%, #e35d5b 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 11px 0;
+      font-size: 1.08em;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(229, 57, 53, 0.08);
+      margin-bottom: 8px;
+      transition: background 0.2s, transform 0.1s;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #d32f2f 0%, #e35d5b 100%);
+      transform: translateY(-1px) scale(1.03);
+    }
+    #answer {
+      background: #fbe9e7;
+      border-radius: 8px;
+      min-height: 48px;
+      margin-top: 10px;
+      padding: 12px 10px;
+      color: #333;
+      font-size: 1em;
+      box-shadow: 0 1px 4px rgba(229, 57, 53, 0.07);
+      word-break: break-word;
+      transition: background 0.2s;
+    }
+    @media (max-width: 400px) {
+      .card { width: 95vw; padding: 18px 6vw 14px 6vw; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <span class="header-icon">📺</span>
+      <h3>TubeQuery</h3>
+    </div>
+    <input id="videoId" placeholder="Enter YouTube Video ID" />
+    <input id="question" placeholder="Ask a question" />
+    <button id="askBtn">Ask</button>
+    <div id="answer"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
